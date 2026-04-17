@@ -2,7 +2,7 @@
 public class account {
 
     String name;
-    String account;
+    //String account;
     Double money;
     Double balance;
 
@@ -11,11 +11,6 @@ public class account {
         this.name = name;
         this.balance = balance;
 
-    }
-
-    public account(Double balance){
-        
-        this.balance = balance;
     }
 
 
@@ -27,4 +22,6 @@ public class account {
     public void greet() {
         System.out.println(name+":" + " I am going broke because I only have " +balance);
     }
+
+    
 }
