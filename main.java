@@ -7,6 +7,8 @@ public main() {
     
 }
 
+
+
 public static void main(String[] args) {
 
     account James = new account("James", 10.0);
@@ -14,7 +16,9 @@ public static void main(String[] args) {
 
    James.withdraw(820.0);
    James.greet();
-   Henry.withdraw(200000);
+   Henry.withdraw(200);
    Henry.greet();
+
+   Henry.getBalance();
 }
 }
