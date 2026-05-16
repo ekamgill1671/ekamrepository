@@ -30,7 +30,7 @@ public class account {
         } else {
         balance = balance - money;
         broke = false;
-         System.out.println("affirmative");
+     System.out.println("affirmative");
         }
     }
 
