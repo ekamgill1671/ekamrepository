@@ -1,11 +1,16 @@
 
-public class account {
+public class account{ 
 
     String name;
-    //String account;
+    String occupation;
     Double money;
+    int age;
     Double balance;
     boolean broke = true;
+    boolean bozo;
+
+    int 2025;
+
     
 
     
@@ -17,8 +22,10 @@ public class account {
 
     }
 
-    public double getBalance() {
-        return balance;
+
+
+    public void getBalance() {
+        System.out.println(balance);
     }
 
 
@@ -33,6 +40,44 @@ public class account {
      System.out.println("affirmative");
         }
     }
+
+    public void deposit(double money) {
+       balance = balance + money;
+       System.out.println("gained money!");
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+    public void getInfo() {
+        System.out.println(name);
+        System.out.println(occupation);
+        System.out.println(balance);
+        System.out.println(age);
+    }
+
+    public void bozo() {
+        if (occupation.equals("Software Engineer") && age < 30) {
+            System.out.println("Thou are not a bozo");
+        } else {
+            System.out.println("Thou are a bozo");
+        }
+    }
+
+    public void areyouabozo(boolean bozo) {
+        if (bozo) {
+            System.out.println("Thou are a bozo");
+        } else {
+            System.out.println("Thou are not a bozo");
+        }
+    }
+
 
 
     
