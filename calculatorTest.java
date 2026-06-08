@@ -11,11 +11,8 @@ public calculatorTest() {
 public static void main(String[] args) {
 
         System.out.println("Welcome to Ekam's Simple Calculator!");
-
             
-
-            
-            try (Scanner scanner = new Scanner(System.in)) {
+            try { Scanner scanner = new Scanner(System.in);
             System.out.println("Enter first number: ");
             int a = scanner.nextInt();
 
@@ -27,16 +24,13 @@ public static void main(String[] args) {
             Calculator calc = new Calculator();
             int result = 0;
 
-            if (scanner.hasNextInt() == true) {
+         /*    if (scanner.hasNextInt() == true) {
                 int number = scanner.nextInt();
                 System.out.println("You entered: " + number);
             } else {
                 System.out.println("Invalid input. Please enter an integer.");
-            }
+            } */
                 
-            System.out.print("Enter a number: ");
-
-    
            
             switch (op) {
                 case "+":
@@ -59,7 +53,9 @@ public static void main(String[] args) {
             
             System.out.println("Result: " + result);
             System.out.println("Thank you for using the Simple Calculator!");
-        }
+            } catch (Exception e) {
+                System.out.println("An error occurred: " + e.getMessage());
+            }
     
 }
 
